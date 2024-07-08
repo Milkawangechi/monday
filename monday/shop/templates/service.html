@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/urembo.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+   <a href="{% url 'index' %}">index</a>
+   <a href="{% url 'about' %}">about</a>
+   <a href="{% url 'contact' %} ">contact</a>
+   <a href="{% url 'service' %}">service</a>
+   <h2>This is the service page</h2>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt quasi doloribus, voluptatem sequi perspiciatis explicabo ab ducimus obcaecati veritatis in quo, quia sed eligendi modi pariatur facere animi mollitia.</p>
+   <img src="{% static 'images/toyota.jpeg' %}" alt="">
+</body>
+</html>
